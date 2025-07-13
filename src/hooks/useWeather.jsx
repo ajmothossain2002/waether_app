@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
+const API_KEY =a9c909ba62d9f9c09c3051e56f425695;
 
 export default function useWeather() {
   const [weather, setWeather] = useState(null);
