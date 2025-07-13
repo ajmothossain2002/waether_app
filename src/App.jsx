@@ -6,11 +6,15 @@ const Home = lazy(() => import('../src/pages/home'));
 export default function App() {
   return (
  
-<>
-      <Suspense fallback={<div><marquee behavior="" direction="right">-+-++--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--+-+-++++++++++++++++++++++++---+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+---++--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+</marquee></div>}>
+      <Container sx={{ mt: 5 }}>
+      <Typography variant="h4" gutterBottom>
+        🌤️ Real-Time Weather App
+      </Typography>
+      <Suspense fallback={<div>Loading...</div>}>
         <Home />
       </Suspense>
-      </>
+    </Container>
+      
   
   );
 }
