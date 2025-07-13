@@ -40,7 +40,7 @@ export default function Home() {
       }}
     >
       <Container maxWidth="sm">
-        <Typography variant="h1" align="center" gutterBottom fontWeight="bold" color="black">
+        <Typography variant="h1" align="center" fontWeight="bold" color="black">
           WEATHER APP
         </Typography>
 
